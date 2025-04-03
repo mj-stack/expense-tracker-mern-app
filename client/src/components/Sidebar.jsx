@@ -16,7 +16,7 @@ const Sidebar = ({ showSidebar }) => {
 
   return (
     showSidebar && (
-      <aside className="w-[150px] bg-slate-500 fixed bottom-0 left-0 top-[60px] text-white flex justify-center">
+      <aside className="w-[150px] h-[84.2%] bg-slate-500 relative left-0 top-0 text-white flex justify-center">
         <ul className="mt-8">
           <li className="pl-6 pr-6 pt-2 pb-2 bg-slate-900 rounded-xl flex justify-center mb-4 cursor-pointer hover:opacity-80 transition-opacity duration-300">
             Dashboard
