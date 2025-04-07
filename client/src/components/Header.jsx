@@ -45,7 +45,7 @@ const Header = ({ toggleSidebarVisibility }) => {
   };
 
   return (
-    <header className="h-[60px] bg-slate-700 flex justify-between">
+    <header className="fixed left-0 top-0 right-0 h-[60px] bg-slate-700 flex justify-between">
       <div className="text-white text-3xl font-mono w-70 flex justify-center items-center">
         <GiHamburgerMenu
           onClick={toggleSidebarVisibility}

@@ -18,8 +18,8 @@ function App() {
     <>
       <Header toggleSidebarVisibility={toggleSidebarVisibility} />
       <Sidebar showSidebar={showSidebar} />
-      <Outlet />
-      <Footer />
+      <Outlet showSidebar={showSidebar} />
+      <Footer showSidebar={showSidebar} />
     </>
   );
 }

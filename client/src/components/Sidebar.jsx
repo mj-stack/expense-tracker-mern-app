@@ -16,7 +16,7 @@ const Sidebar = ({ showSidebar }) => {
 
   return (
     showSidebar && (
-      <aside className="w-[150px] h-[84.2%] bg-slate-500 relative left-0 top-0 text-white flex justify-center">
+      <aside className="fixed w-[150px] h-[91.4%] bg-slate-500 left-0 top-[60px] -z-10 text-white flex justify-center">
         <ul className="mt-8">
           <li className="pl-6 pr-6 pt-2 pb-2 bg-slate-900 rounded-xl flex justify-center mb-4 cursor-pointer hover:opacity-80 transition-opacity duration-300">
             Dashboard
@@ -32,7 +32,7 @@ const Sidebar = ({ showSidebar }) => {
           </li>
         </ul>
 
-        <div className="absolute border-t-2 bottom-0 left-0 right-0 h-[40px] flex justify-between items-center">
+        <div className="absolute border-t-2 bottom-0 left-0 right-0 h-[50px] flex justify-between items-center">
           <AccountPopup acctPopupVisible={acctPopupVisible} />
           <MdAccountCircle className="text-3xl ml-[5px]" />
           <div className="w-[80px] overflow-hidden">
