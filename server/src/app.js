@@ -15,7 +15,7 @@ import { accountsRoute } from "./routes/accountsRoute.js";
 
 // Routes declaration
 app.get("/", (req, res) => {
-  res.send("Hello world!");
+  res.send({ name: "mukul joshi", age: 21 });
 });
 app.use(accountsRoute);
 
