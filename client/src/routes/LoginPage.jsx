@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
+import { IoIosEye } from "react-icons/io";
 
 const LoginPage = () => {
   return (
@@ -14,11 +15,14 @@ const LoginPage = () => {
               className="w-[300px] h-[45px] border-4 border-slate-500 bg-white rounded-xl mb-4 pl-2 placeholder:text-slate-700 outline-0"
               placeholder="Enter your email"
             />
-            <input
-              type="text"
-              className="w-[300px] h-[45px] border-4 border-slate-500 bg-white rounded-xl mb-[60px] pl-2 placeholder:text-slate-700 outline-0"
-              placeholder="Password"
-            />
+            <div className="relative w-[300px] h-[45px] mb-[60px]">
+              <input
+                type="password"
+                className="w-full h-full border-4 border-slate-500 bg-white rounded-xl pl-2 pr-10 placeholder:text-slate-700 outline-0"
+                placeholder="Password"
+              />
+              <IoIosEye className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-slate-700" />
+            </div>
             <button className="w-[296px] h-[45px] bg-slate-400 rounded-xl cursor-pointer hover:opacity-90 active:opacity-80">
               Login
             </button>

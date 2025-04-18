@@ -45,7 +45,7 @@ const SignupPage = () => {
               Already have an account?{" "}
               <span className="underline cursor-pointer">
                 {" "}
-                <Link to="/login"> Login </Link>{" "}
+                <Link to="/login"> Signup </Link>{" "}
               </span>{" "}
               here.
             </p>
