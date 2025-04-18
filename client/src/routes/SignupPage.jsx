@@ -13,7 +13,8 @@ const SignupPage = () => {
   const passwordRef = useRef("");
   const confirmPasswordRef = useRef("");
 
-  const createUser = async () => {
+  const createUser = async (e) => {
+    e.preventDefault();
     const newUser = {
       name: nameRef.current.value,
       surname: surnameRef.current.value,
@@ -38,7 +39,7 @@ const SignupPage = () => {
       <Header />
       <main className="flex justify-center items-center min-h-[800px]">
         <div className="flex flex-col bg-slate-800 border-slate-800 h-[500px] w-[450px] rounded-3xl">
-          <div className="border-b-4 border-white flex-4 flex flex-col justify-center items-center">
+          <form className="border-b-4 border-white flex-4 flex flex-col justify-center items-center">
             <div className="mb-4">
               <input
                 required
@@ -77,12 +78,13 @@ const SignupPage = () => {
               placeholder="Confirm password"
             />
             <button
+              type="submit"
               onClick={createUser}
               className="w-[366px] h-[45px] bg-slate-400 rounded-xl cursor-pointer hover:opacity-90 active:opacity-80"
             >
               Sign up
             </button>
-          </div>
+          </form>
           <div className="flex-1 flex justify-center items-center">
             <p className="text-white">
               Already have an account?{" "}

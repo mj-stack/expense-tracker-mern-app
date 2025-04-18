@@ -1,5 +1,6 @@
 const signupUser = (req, res) => {
-  console.log(req.body);
+  const { name, surname, email, password, confirmPassword } = req.body;
+  console.log(name, surname, email, password, confirmPassword);
   res.send("Deepak joshi");
 };
 
